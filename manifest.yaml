@@ -1,0 +1,12 @@
+author:
+  name: Ben Mills
+  email: ben@unfiniti.com
+platforms:
+  - macos
+setup:
+  macos:
+    steps:
+      - name: Install p10k
+        command: brew install romkatv/powerlevel10k/powerlevel10k
+        runif: |-
+          [ ! `which p10k` ]
