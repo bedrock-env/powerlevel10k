@@ -9,4 +9,4 @@ setup:
       - name: Install p10k
         command: brew install powerlevel10k
         runif: |-
-          [ ! `which p10k` ]
+          [ -n "$(which p10k)" ]
