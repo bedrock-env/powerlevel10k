@@ -1,0 +1,17 @@
+author:
+  name: Ben Mills
+  email: ben@unfiniti.com
+platforms:
+  - macos
+setup:
+  macos:
+    steps:
+      - name: Install p10k
+        command: brew install powerlevel10k
+        runif: |-
+          command -v p10k > /dev/null 2>&1
+      - name: Configure files
+        files:
+        - source: p10k.zsh
+          target: $HOME/.config/p10k.zsh
+          operation: symlink
